@@ -1,4 +1,4 @@
-[gd_scene load_steps=43 format=2]
+[gd_scene load_steps=55 format=2]
 
 [ext_resource path="res://spr/empty.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Main.gd" type="Script" id=2]
@@ -14,16 +14,20 @@
 [ext_resource path="res://spr/brush1.png" type="Texture" id=12]
 [ext_resource path="res://Scenes/Receiver.tscn" type="PackedScene" id=13]
 [ext_resource path="res://spr/titleBG.png" type="Texture" id=14]
-[ext_resource path="res://fonts/noto_kor/static/NotoSansKR-Light.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://spr/panel.png" type="Texture" id=15]
 [ext_resource path="res://fonts/noto_kor/static/NotoSansKR-Regular.ttf" type="DynamicFontData" id=16]
 [ext_resource path="res://spr/panel02.png" type="Texture" id=17]
 [ext_resource path="res://spr/loading.png" type="Texture" id=18]
-[ext_resource path="res://fonts/noto_kor/static/NotoSansKR-Medium.ttf" type="DynamicFontData" id=19]
+[ext_resource path="res://spr/closedBG2.png" type="Texture" id=19]
 [ext_resource path="res://spr/closedBG.png" type="Texture" id=20]
+[ext_resource path="res://spr/leaderboardBG.png" type="Texture" id=21]
+[ext_resource path="res://spr/crown2.png" type="Texture" id=22]
+[ext_resource path="res://spr/crown3.png" type="Texture" id=23]
+[ext_resource path="res://spr/crown1.png" type="Texture" id=24]
 
 [sub_resource type="ImageTexture" id=1]
 
-[sub_resource type="Image" id=47]
+[sub_resource type="Image" id=87]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 89, 97, 44, 91, 89, 97, 184, 90, 88, 96, 244, 90, 88, 96, 255, 91, 89, 97, 184, 91, 89, 97, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 89, 87, 95, 46, 90, 88, 96, 242, 86, 84, 92, 255, 84, 83, 90, 255, 84, 83, 90, 255, 86, 84, 92, 255, 90, 88, 96, 242, 89, 87, 95, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 90, 88, 96, 184, 85, 83, 91, 255, 83, 81, 89, 255, 83, 81, 89, 255, 83, 81, 89, 255, 83, 81, 89, 255, 85, 83, 91, 255, 90, 88, 96, 184, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 87, 86, 94, 244, 82, 81, 89, 255, 82, 80, 88, 255, 82, 80, 88, 255, 82, 80, 88, 255, 82, 80, 88, 255, 82, 81, 89, 255, 88, 86, 94, 245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 85, 93, 244, 81, 80, 88, 255, 81, 79, 87, 255, 81, 79, 87, 255, 81, 79, 87, 255, 81, 79, 87, 255, 81, 80, 88, 255, 87, 85, 93, 245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 87, 85, 93, 184, 82, 80, 88, 255, 80, 78, 86, 255, 80, 78, 86, 255, 80, 78, 86, 255, 80, 78, 86, 255, 82, 80, 88, 255, 87, 85, 93, 184, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 85, 83, 91, 47, 85, 83, 91, 242, 81, 79, 87, 255, 79, 77, 85, 255, 79, 77, 85, 255, 80, 79, 87, 255, 85, 83, 91, 242, 85, 83, 91, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 83, 91, 46, 85, 84, 92, 184, 84, 82, 90, 244, 84, 82, 90, 255, 85, 83, 91, 184, 84, 83, 91, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "RGBA8",
@@ -35,7 +39,7 @@ data = {
 [sub_resource type="ImageTexture" id=3]
 flags = 4
 flags = 4
-image = SubResource( 47 )
+image = SubResource( 87 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=4]
@@ -50,7 +54,7 @@ margin_right = 5.0
 margin_top = 5.0
 margin_bottom = 5.0
 
-[sub_resource type="Image" id=48]
+[sub_resource type="Image" id=88]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 151, 208, 223, 37, 146, 203, 220, 173, 132, 187, 212, 241, 130, 186, 212, 255, 146, 202, 220, 173, 151, 208, 223, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 149, 208, 221, 39, 131, 187, 211, 239, 106, 162, 198, 255, 98, 154, 194, 255, 97, 154, 193, 255, 106, 162, 198, 255, 131, 187, 211, 239, 149, 208, 221, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 200, 215, 173, 104, 159, 194, 255, 93, 146, 187, 255, 93, 146, 187, 255, 93, 146, 187, 255, 93, 146, 187, 255, 104, 159, 194, 255, 139, 200, 215, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 121, 181, 203, 241, 92, 146, 184, 255, 88, 141, 182, 255, 88, 141, 182, 255, 88, 141, 182, 255, 88, 141, 182, 255, 92, 146, 184, 255, 120, 180, 202, 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 176, 199, 241, 89, 142, 179, 255, 86, 137, 176, 255, 86, 137, 176, 255, 86, 137, 176, 255, 86, 137, 176, 255, 89, 142, 179, 255, 115, 176, 199, 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 123, 192, 207, 173, 92, 145, 178, 255, 83, 132, 169, 255, 83, 132, 169, 255, 83, 132, 169, 255, 83, 132, 169, 255, 92, 145, 178, 255, 123, 192, 207, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 121, 197, 209, 40, 107, 174, 193, 239, 88, 143, 174, 255, 84, 131, 164, 255, 84, 131, 164, 255, 87, 142, 173, 255, 107, 174, 193, 239, 121, 197, 209, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 117, 198, 207, 39, 112, 188, 202, 173, 100, 166, 188, 242, 100, 165, 186, 255, 113, 188, 201, 173, 117, 198, 207, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "RGBA8",
@@ -62,7 +66,7 @@ data = {
 [sub_resource type="ImageTexture" id=6]
 flags = 4
 flags = 4
-image = SubResource( 48 )
+image = SubResource( 88 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=7]
@@ -77,7 +81,7 @@ margin_right = 5.0
 margin_top = 5.0
 margin_bottom = 5.0
 
-[sub_resource type="Image" id=49]
+[sub_resource type="Image" id=89]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 191, 4, 176, 71, 176, 148, 176, 148, 176, 71, 191, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 71, 175, 186, 175, 186, 175, 186, 175, 186, 176, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 148, 175, 186, 175, 186, 175, 186, 175, 186, 176, 148, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 148, 175, 186, 175, 186, 175, 186, 175, 186, 176, 148, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 71, 175, 186, 175, 186, 175, 186, 175, 186, 176, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 191, 4, 176, 71, 176, 148, 176, 148, 176, 71, 191, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "LumAlpha8",
@@ -89,7 +93,7 @@ data = {
 [sub_resource type="ImageTexture" id=9]
 flags = 4
 flags = 4
-image = SubResource( 49 )
+image = SubResource( 89 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=10]
@@ -116,7 +120,7 @@ margin_right = 5.0
 margin_top = 5.0
 margin_bottom = 5.0
 
-[sub_resource type="Image" id=50]
+[sub_resource type="Image" id=90]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 77, 75, 89, 4, 77, 75, 89, 25, 77, 75, 89, 64, 77, 75, 89, 93, 77, 75, 89, 102, 77, 75, 89, 102, 77, 75, 89, 93, 77, 75, 89, 64, 77, 75, 89, 25, 77, 75, 89, 4, 0, 0, 0, 0, 77, 75, 89, 4, 77, 75, 89, 40, 64, 62, 74, 147, 42, 41, 47, 240, 32, 32, 36, 252, 30, 30, 35, 255, 30, 30, 35, 255, 32, 32, 36, 252, 42, 41, 47, 240, 64, 62, 74, 147, 77, 75, 89, 40, 77, 75, 89, 4, 77, 75, 89, 25, 63, 62, 73, 148, 31, 31, 36, 252, 32, 32, 37, 255, 34, 34, 39, 255, 35, 35, 39, 255, 35, 35, 39, 255, 34, 34, 39, 255, 32, 32, 37, 255, 31, 31, 36, 252, 63, 62, 73, 148, 77, 75, 89, 25, 77, 75, 89, 64, 42, 41, 47, 240, 32, 32, 37, 255, 35, 35, 40, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 40, 255, 32, 32, 37, 255, 42, 41, 47, 240, 77, 75, 89, 64, 77, 75, 89, 93, 32, 32, 36, 253, 34, 34, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 34, 34, 39, 255, 32, 32, 36, 253, 77, 75, 89, 93, 77, 75, 89, 103, 30, 30, 35, 255, 35, 35, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 39, 255, 30, 30, 35, 255, 77, 75, 89, 103, 77, 75, 89, 103, 30, 30, 35, 255, 35, 35, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 39, 255, 30, 30, 35, 255, 77, 75, 89, 103, 77, 75, 89, 93, 32, 32, 36, 253, 34, 34, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 34, 34, 39, 255, 32, 32, 36, 253, 77, 75, 89, 93, 77, 75, 89, 64, 42, 41, 47, 240, 32, 32, 37, 255, 35, 35, 40, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 40, 255, 32, 32, 37, 255, 42, 41, 47, 240, 77, 75, 89, 64, 77, 75, 89, 26, 63, 62, 73, 150, 31, 31, 36, 252, 32, 32, 37, 255, 34, 34, 39, 255, 35, 35, 39, 255, 35, 35, 39, 255, 34, 34, 39, 255, 32, 32, 37, 255, 31, 31, 36, 252, 63, 62, 73, 150, 77, 75, 89, 26, 77, 75, 89, 4, 77, 75, 89, 40, 63, 62, 73, 149, 42, 41, 47, 240, 32, 32, 36, 253, 30, 30, 35, 255, 30, 30, 35, 255, 32, 32, 36, 253, 42, 41, 47, 240, 63, 62, 73, 149, 77, 75, 89, 40, 77, 75, 89, 4, 0, 0, 0, 0, 77, 75, 89, 4, 77, 75, 89, 25, 77, 75, 89, 64, 77, 75, 89, 93, 77, 75, 89, 102, 77, 75, 89, 102, 77, 75, 89, 93, 77, 75, 89, 64, 77, 75, 89, 25, 77, 75, 89, 4, 0, 0, 0, 0 ),
 "format": "RGBA8",
@@ -128,7 +132,7 @@ data = {
 [sub_resource type="ImageTexture" id=13]
 flags = 4
 flags = 4
-image = SubResource( 50 )
+image = SubResource( 90 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=14]
@@ -156,6 +160,12 @@ HScrollBar/styles/grabber_pressed = SubResource( 10 )
 HScrollBar/styles/scroll = SubResource( 11 )
 HScrollBar/styles/scroll_focus = SubResource( 14 )
 
+[sub_resource type="DynamicFont" id=61]
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=86]
+font_data = ExtResource( 8 )
+
 [sub_resource type="DynamicFont" id=20]
 size = 24
 outline_color = Color( 0, 0, 0, 1 )
@@ -163,9 +173,22 @@ font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=25]
 size = 20
-font_data = ExtResource( 15 )
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=66]
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=76]
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=56]
+size = 24
+font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=35]
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=71]
 font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=30]
@@ -178,10 +201,17 @@ font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=41]
 size = 24
-font_data = ExtResource( 19 )
+font_data = ExtResource( 8 )
 
 [sub_resource type="DynamicFont" id=46]
 size = 24
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=51]
+size = 40
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=81]
 font_data = ExtResource( 8 )
 
 [node name="Main" type="Node2D"]
@@ -233,6 +263,7 @@ theme = SubResource( 15 )
 min_value = 1.0
 step = 1.0
 value = 5.0
+rounded = true
 custom_step = 1.0
 
 [node name="Color" type="Sprite" parent="ToolsBG"]
@@ -248,20 +279,21 @@ margin_bottom = -4.0
 align = 2
 color = Color( 0, 0.415686, 1, 1 )
 
-[node name="Button" type="Button" parent="ToolsBG"]
+[node name="FillButton" type="Button" parent="ToolsBG"]
 margin_left = -120.0
 margin_top = 240.0
 margin_bottom = 320.0
 rect_pivot_offset = Vector2( 292, -13 )
-text = "Reset Canvas"
+custom_fonts/font = SubResource( 61 )
+text = "Fill Canvas"
 
 [node name="Button2" type="Button" parent="ToolsBG"]
-visible = false
 margin_top = 240.0
 margin_right = 120.0
 margin_bottom = 320.0
 rect_pivot_offset = Vector2( 292, -13 )
-text = "Save Canvas"
+custom_fonts/font = SubResource( 86 )
+text = "STOP"
 
 [node name="fontsize" type="RichTextLabel" parent="ToolsBG"]
 margin_left = -30.0
@@ -327,14 +359,143 @@ margin_left = -240.0
 margin_top = -60.0
 margin_right = 240.0
 margin_bottom = -20.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
 custom_fonts/font = SubResource( 25 )
+context_menu_enabled = false
 
 [node name="Button" type="Button" parent="Title"]
 margin_left = 250.0
 margin_top = -60.0
 margin_right = 330.0
 margin_bottom = -20.0
+custom_fonts/font = SubResource( 66 )
 text = "Connect"
+
+[node name="License" type="Button" parent="Title"]
+margin_left = 360.0
+margin_top = 290.0
+margin_right = 460.0
+margin_bottom = 340.0
+custom_fonts/font = SubResource( 76 )
+text = "LICENSE"
+
+[node name="LicenseBG" type="TextureRect" parent="Title"]
+visible = false
+margin_left = -380.0
+margin_top = -360.0
+margin_right = 380.0
+margin_bottom = 360.0
+texture = ExtResource( 15 )
+stretch_mode = 1
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Title/LicenseBG"]
+margin_left = 82.0
+margin_top = 157.0
+margin_right = 758.0
+margin_bottom = 642.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
+text = "Copyright 2014-2021 Adobe (http://www.adobe.com/), with Reserved Font Name 'Source'
+
+This Font Software is licensed under the SIL Open Font License, Version 1.1.
+This license is copied below, and is also available with a FAQ at:
+https://openfontlicense.org
+
+
+-----------------------------------------------------------
+SIL OPEN FONT LICENSE Version 1.1 - 26 February 2007
+-----------------------------------------------------------
+
+PREAMBLE
+The goals of the Open Font License (OFL) are to stimulate worldwide
+development of collaborative font projects, to support the font creation
+efforts of academic and linguistic communities, and to provide a free and
+open framework in which fonts may be shared and improved in partnership
+with others.
+
+The OFL allows the licensed fonts to be used, studied, modified and
+redistributed freely as long as they are not sold by themselves. The
+fonts, including any derivative works, can be bundled, embedded, 
+redistributed and/or sold with any software provided that any reserved
+names are not used by derivative works. The fonts and derivatives,
+however, cannot be released under any other type of license. The
+requirement for fonts to remain under this license does not apply
+to any document created using the fonts or their derivatives.
+
+DEFINITIONS
+\"Font Software\" refers to the set of files released by the Copyright
+Holder(s) under this license and clearly marked as such. This may
+include source files, build scripts and documentation.
+
+\"Reserved Font Name\" refers to any names specified as such after the
+copyright statement(s).
+
+\"Original Version\" refers to the collection of Font Software components as
+distributed by the Copyright Holder(s).
+
+\"Modified Version\" refers to any derivative made by adding to, deleting,
+or substituting -- in part or in whole -- any of the components of the
+Original Version, by changing formats or by porting the Font Software to a
+new environment.
+
+\"Author\" refers to any designer, engineer, programmer, technical
+writer or other person who contributed to the Font Software.
+
+PERMISSION & CONDITIONS
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Font Software, to use, study, copy, merge, embed, modify,
+redistribute, and sell modified and unmodified copies of the Font
+Software, subject to the following conditions:
+
+1) Neither the Font Software nor any of its individual components,
+in Original or Modified Versions, may be sold by itself.
+
+2) Original or Modified Versions of the Font Software may be bundled,
+redistributed and/or sold with any software, provided that each copy
+contains the above copyright notice and this license. These can be
+included either as stand-alone text files, human-readable headers or
+in the appropriate machine-readable metadata fields within text or
+binary files as long as those fields can be easily viewed by the user.
+
+3) No Modified Version of the Font Software may use the Reserved Font
+Name(s) unless explicit written permission is granted by the corresponding
+Copyright Holder. This restriction only applies to the primary font name as
+presented to the users.
+
+4) The name(s) of the Copyright Holder(s) or the Author(s) of the Font
+Software shall not be used to promote, endorse or advertise any
+Modified Version, except to acknowledge the contribution(s) of the
+Copyright Holder(s) and the Author(s) or with their explicit written
+permission.
+
+5) The Font Software, modified or unmodified, in part or in whole,
+must be distributed entirely under this license, and must not be
+distributed under any other license. The requirement for fonts to
+remain under this license does not apply to any document created
+using the Font Software.
+
+TERMINATION
+This license becomes null and void if any of the above conditions are
+not met.
+
+DISCLAIMER
+THE FONT SOFTWARE IS PROVIDED \"AS IS\", WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO ANY WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF COPYRIGHT, PATENT, TRADEMARK, OR OTHER RIGHT. IN NO EVENT SHALL THE
+COPYRIGHT HOLDER BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
+INCLUDING ANY GENERAL, SPECIAL, INDIRECT, INCIDENTAL, OR CONSEQUENTIAL
+DAMAGES, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+FROM, OUT OF THE USE OR INABILITY TO USE THE FONT SOFTWARE OR FROM
+OTHER DEALINGS IN THE FONT SOFTWARE.
+"
+
+[node name="CloseButton" type="Button" parent="Title/LicenseBG"]
+margin_left = 652.0
+margin_top = 644.0
+margin_right = 752.0
+margin_bottom = 714.0
+custom_fonts/font = SubResource( 56 )
+text = "Close"
 
 [node name="Loading" type="Sprite" parent="."]
 visible = false
@@ -358,6 +519,7 @@ margin_left = -590.0
 margin_top = 170.0
 margin_right = -520.0
 margin_bottom = 230.0
+custom_fonts/font = SubResource( 71 )
 text = "Set
 Answer"
 
@@ -370,11 +532,13 @@ custom_colors/font_color = Color( 0, 0, 0, 1 )
 custom_fonts/font = SubResource( 30 )
 text = "정답 입력"
 
-[node name="Receiver" parent="." instance=ExtResource( 13 )]
-
 [node name="Closed" type="Sprite" parent="."]
 position = Vector2( 800, 1080 )
 texture = ExtResource( 20 )
+
+[node name="ClosedBg2" type="Sprite" parent="Closed"]
+visible = false
+texture = ExtResource( 19 )
 
 [node name="Answer" type="RichTextLabel" parent="Closed"]
 margin_left = -400.0
@@ -418,14 +582,104 @@ margin_bottom = 340.0
 custom_fonts/font = SubResource( 46 )
 text = "NEXT"
 
+[node name="LeaderboardBg" type="Sprite" parent="."]
+position = Vector2( 800, -360 )
+texture = ExtResource( 21 )
+
+[node name="Crown1" type="Sprite" parent="LeaderboardBg"]
+position = Vector2( -200, -140 )
+texture = ExtResource( 24 )
+
+[node name="Crown2" type="Sprite" parent="LeaderboardBg"]
+position = Vector2( -200, -20 )
+texture = ExtResource( 22 )
+
+[node name="Crown3" type="Sprite" parent="LeaderboardBg"]
+position = Vector2( -200, 100 )
+texture = ExtResource( 23 )
+
+[node name="User1" type="RichTextLabel" parent="LeaderboardBg"]
+margin_left = -200.0
+margin_top = -170.0
+margin_right = 200.0
+margin_bottom = -90.0
+custom_fonts/normal_font = SubResource( 51 )
+bbcode_enabled = true
+bbcode_text = "[center]유저명A"
+text = "유저명A"
+
+[node name="User2" type="RichTextLabel" parent="LeaderboardBg"]
+margin_left = -200.0
+margin_top = -50.0
+margin_right = 200.0
+margin_bottom = 30.0
+custom_fonts/normal_font = SubResource( 51 )
+bbcode_enabled = true
+bbcode_text = "[center]유저명B"
+text = "유저명B"
+
+[node name="User3" type="RichTextLabel" parent="LeaderboardBg"]
+margin_left = -200.0
+margin_top = 70.0
+margin_right = 200.0
+margin_bottom = 150.0
+custom_fonts/normal_font = SubResource( 51 )
+bbcode_enabled = true
+bbcode_text = "[center]유저명C"
+text = "유저명C"
+
+[node name="Score1" type="RichTextLabel" parent="LeaderboardBg"]
+margin_left = 150.0
+margin_top = -170.0
+margin_right = 250.0
+margin_bottom = -90.0
+custom_fonts/normal_font = SubResource( 51 )
+bbcode_enabled = true
+bbcode_text = "[center]0"
+text = "0"
+
+[node name="Score2" type="RichTextLabel" parent="LeaderboardBg"]
+margin_left = 150.0
+margin_top = -50.0
+margin_right = 250.0
+margin_bottom = 30.0
+custom_fonts/normal_font = SubResource( 51 )
+bbcode_enabled = true
+bbcode_text = "[center]0"
+text = "0"
+
+[node name="Score3" type="RichTextLabel" parent="LeaderboardBg"]
+margin_left = 150.0
+margin_top = 70.0
+margin_right = 250.0
+margin_bottom = 150.0
+custom_fonts/normal_font = SubResource( 51 )
+bbcode_enabled = true
+bbcode_text = "[center]0"
+text = "0"
+
+[node name="Restart" type="Button" parent="LeaderboardBg"]
+margin_left = 340.0
+margin_top = 260.0
+margin_right = 460.0
+margin_bottom = 340.0
+custom_fonts/font = SubResource( 81 )
+text = "NEW GAME"
+
+[node name="Receiver" parent="." instance=ExtResource( 13 )]
+
 [connection signal="value_changed" from="ToolsBG/HScrollBar" to="." method="_on_HScrollBar_value_changed"]
-[connection signal="button_up" from="ToolsBG/Button" to="." method="_on_Button_button_up"]
+[connection signal="button_up" from="ToolsBG/FillButton" to="." method="_on_FillButton_button_up"]
+[connection signal="button_up" from="ToolsBG/Button2" to="." method="_on_Button2_button_up"]
 [connection signal="button_up" from="ToolsBG/Brush1/brush1" to="." method="_on_brush1_button_up"]
 [connection signal="button_up" from="ToolsBG/Brush2/brush2" to="." method="_on_brush2_button_up"]
 [connection signal="button_up" from="ToolsBG/Brush3/brush3" to="." method="_on_brush3_button_up"]
 [connection signal="button_up" from="Title/Button" to="." method="_on_Button_button_up"]
+[connection signal="button_up" from="Title/License" to="." method="_on_License_button_up"]
+[connection signal="button_up" from="Title/LicenseBG/CloseButton" to="." method="_on_CloseButton_button_up"]
 [connection signal="button_up" from="Loading/Setter" to="." method="_on_Setter_button_up"]
-[connection signal="chatReceived" from="Receiver" to="." method="_on_Receiver_chatReceived"]
-[connection signal="connected" from="Receiver" to="." method="_on_Receiver_connected"]
 [connection signal="button_up" from="Closed/ENDButton" to="." method="_on_ENDButton_button_up"]
 [connection signal="button_up" from="Closed/NextButton" to="." method="_on_NextButton_button_up"]
+[connection signal="pressed" from="LeaderboardBg/Restart" to="." method="_on_Restart_pressed"]
+[connection signal="chatReceived" from="Receiver" to="." method="_on_Receiver_chatReceived"]
+[connection signal="connected" from="Receiver" to="." method="_on_Receiver_connected"]

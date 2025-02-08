@@ -1,5 +1,6 @@
 extends Node
 
+
 #ChannelID를 원하는 방송에 맞춰서 변형해 주세요. 방송인의 주소 제일 뒤에있는 문자열이 고유 Channel ID 입니다.
 export var ChannelID = ''
 export var ChannelIDDirect = ''
@@ -114,10 +115,10 @@ func _connection(var ChannelID):
 		set_process(false)
 	else:
 		print("connected to chat server")
-	yield(get_tree().create_timer(1),"timeout")
-	print_debug(socket.get_connection_status())
-	ready=true
-	emit_signal("connected")
+		yield(get_tree().create_timer(1),"timeout")
+		print_debug(socket.get_connection_status())
+		ready=true
+		emit_signal("connected")
 	pass
 	
 func _on_send(var sended):

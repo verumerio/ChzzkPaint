@@ -12,7 +12,7 @@ config_version=4
 
 config/name="Draw And Chat for Chzzk"
 run/main_scene="res://Scenes/Main.tscn"
-config/icon="res://icon.png"
+config/icon="res://spr/icon.png"
 
 [display]
 
