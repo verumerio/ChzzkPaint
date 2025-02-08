@@ -1,4 +1,4 @@
-[gd_scene load_steps=29 format=2]
+[gd_scene load_steps=43 format=2]
 
 [ext_resource path="res://spr/empty.png" type="Texture" id=1]
 [ext_resource path="res://scripts/Main.gd" type="Script" id=2]
@@ -12,10 +12,18 @@
 [ext_resource path="res://spr/brush3.png" type="Texture" id=10]
 [ext_resource path="res://spr/sel.png" type="Texture" id=11]
 [ext_resource path="res://spr/brush1.png" type="Texture" id=12]
+[ext_resource path="res://Scenes/Receiver.tscn" type="PackedScene" id=13]
+[ext_resource path="res://spr/titleBG.png" type="Texture" id=14]
+[ext_resource path="res://fonts/noto_kor/static/NotoSansKR-Light.ttf" type="DynamicFontData" id=15]
+[ext_resource path="res://fonts/noto_kor/static/NotoSansKR-Regular.ttf" type="DynamicFontData" id=16]
+[ext_resource path="res://spr/panel02.png" type="Texture" id=17]
+[ext_resource path="res://spr/loading.png" type="Texture" id=18]
+[ext_resource path="res://fonts/noto_kor/static/NotoSansKR-Medium.ttf" type="DynamicFontData" id=19]
+[ext_resource path="res://spr/closedBG.png" type="Texture" id=20]
 
 [sub_resource type="ImageTexture" id=1]
 
-[sub_resource type="Image" id=21]
+[sub_resource type="Image" id=47]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 91, 89, 97, 44, 91, 89, 97, 184, 90, 88, 96, 244, 90, 88, 96, 255, 91, 89, 97, 184, 91, 89, 97, 44, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 89, 87, 95, 46, 90, 88, 96, 242, 86, 84, 92, 255, 84, 83, 90, 255, 84, 83, 90, 255, 86, 84, 92, 255, 90, 88, 96, 242, 89, 87, 95, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 90, 88, 96, 184, 85, 83, 91, 255, 83, 81, 89, 255, 83, 81, 89, 255, 83, 81, 89, 255, 83, 81, 89, 255, 85, 83, 91, 255, 90, 88, 96, 184, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 87, 86, 94, 244, 82, 81, 89, 255, 82, 80, 88, 255, 82, 80, 88, 255, 82, 80, 88, 255, 82, 80, 88, 255, 82, 81, 89, 255, 88, 86, 94, 245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 86, 85, 93, 244, 81, 80, 88, 255, 81, 79, 87, 255, 81, 79, 87, 255, 81, 79, 87, 255, 81, 79, 87, 255, 81, 80, 88, 255, 87, 85, 93, 245, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 87, 85, 93, 184, 82, 80, 88, 255, 80, 78, 86, 255, 80, 78, 86, 255, 80, 78, 86, 255, 80, 78, 86, 255, 82, 80, 88, 255, 87, 85, 93, 184, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 85, 83, 91, 47, 85, 83, 91, 242, 81, 79, 87, 255, 79, 77, 85, 255, 79, 77, 85, 255, 80, 79, 87, 255, 85, 83, 91, 242, 85, 83, 91, 47, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 84, 83, 91, 46, 85, 84, 92, 184, 84, 82, 90, 244, 84, 82, 90, 255, 85, 83, 91, 184, 84, 83, 91, 46, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "RGBA8",
@@ -27,7 +35,7 @@ data = {
 [sub_resource type="ImageTexture" id=3]
 flags = 4
 flags = 4
-image = SubResource( 21 )
+image = SubResource( 47 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=4]
@@ -42,7 +50,7 @@ margin_right = 5.0
 margin_top = 5.0
 margin_bottom = 5.0
 
-[sub_resource type="Image" id=22]
+[sub_resource type="Image" id=48]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 151, 208, 223, 37, 146, 203, 220, 173, 132, 187, 212, 241, 130, 186, 212, 255, 146, 202, 220, 173, 151, 208, 223, 37, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 149, 208, 221, 39, 131, 187, 211, 239, 106, 162, 198, 255, 98, 154, 194, 255, 97, 154, 193, 255, 106, 162, 198, 255, 131, 187, 211, 239, 149, 208, 221, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 139, 200, 215, 173, 104, 159, 194, 255, 93, 146, 187, 255, 93, 146, 187, 255, 93, 146, 187, 255, 93, 146, 187, 255, 104, 159, 194, 255, 139, 200, 215, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 121, 181, 203, 241, 92, 146, 184, 255, 88, 141, 182, 255, 88, 141, 182, 255, 88, 141, 182, 255, 88, 141, 182, 255, 92, 146, 184, 255, 120, 180, 202, 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 115, 176, 199, 241, 89, 142, 179, 255, 86, 137, 176, 255, 86, 137, 176, 255, 86, 137, 176, 255, 86, 137, 176, 255, 89, 142, 179, 255, 115, 176, 199, 243, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 123, 192, 207, 173, 92, 145, 178, 255, 83, 132, 169, 255, 83, 132, 169, 255, 83, 132, 169, 255, 83, 132, 169, 255, 92, 145, 178, 255, 123, 192, 207, 173, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 121, 197, 209, 40, 107, 174, 193, 239, 88, 143, 174, 255, 84, 131, 164, 255, 84, 131, 164, 255, 87, 142, 173, 255, 107, 174, 193, 239, 121, 197, 209, 40, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 117, 198, 207, 39, 112, 188, 202, 173, 100, 166, 188, 242, 100, 165, 186, 255, 113, 188, 201, 173, 117, 198, 207, 39, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "RGBA8",
@@ -54,7 +62,7 @@ data = {
 [sub_resource type="ImageTexture" id=6]
 flags = 4
 flags = 4
-image = SubResource( 22 )
+image = SubResource( 48 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=7]
@@ -69,7 +77,7 @@ margin_right = 5.0
 margin_top = 5.0
 margin_bottom = 5.0
 
-[sub_resource type="Image" id=23]
+[sub_resource type="Image" id=49]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 191, 4, 176, 71, 176, 148, 176, 148, 176, 71, 191, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 71, 175, 186, 175, 186, 175, 186, 175, 186, 176, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 148, 175, 186, 175, 186, 175, 186, 175, 186, 176, 148, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 148, 175, 186, 175, 186, 175, 186, 175, 186, 176, 148, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 176, 71, 175, 186, 175, 186, 175, 186, 175, 186, 176, 71, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 191, 4, 176, 71, 176, 148, 176, 148, 176, 71, 191, 4, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 ),
 "format": "LumAlpha8",
@@ -81,7 +89,7 @@ data = {
 [sub_resource type="ImageTexture" id=9]
 flags = 4
 flags = 4
-image = SubResource( 23 )
+image = SubResource( 49 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=10]
@@ -108,7 +116,7 @@ margin_right = 5.0
 margin_top = 5.0
 margin_bottom = 5.0
 
-[sub_resource type="Image" id=24]
+[sub_resource type="Image" id=50]
 data = {
 "data": PoolByteArray( 0, 0, 0, 0, 77, 75, 89, 4, 77, 75, 89, 25, 77, 75, 89, 64, 77, 75, 89, 93, 77, 75, 89, 102, 77, 75, 89, 102, 77, 75, 89, 93, 77, 75, 89, 64, 77, 75, 89, 25, 77, 75, 89, 4, 0, 0, 0, 0, 77, 75, 89, 4, 77, 75, 89, 40, 64, 62, 74, 147, 42, 41, 47, 240, 32, 32, 36, 252, 30, 30, 35, 255, 30, 30, 35, 255, 32, 32, 36, 252, 42, 41, 47, 240, 64, 62, 74, 147, 77, 75, 89, 40, 77, 75, 89, 4, 77, 75, 89, 25, 63, 62, 73, 148, 31, 31, 36, 252, 32, 32, 37, 255, 34, 34, 39, 255, 35, 35, 39, 255, 35, 35, 39, 255, 34, 34, 39, 255, 32, 32, 37, 255, 31, 31, 36, 252, 63, 62, 73, 148, 77, 75, 89, 25, 77, 75, 89, 64, 42, 41, 47, 240, 32, 32, 37, 255, 35, 35, 40, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 40, 255, 32, 32, 37, 255, 42, 41, 47, 240, 77, 75, 89, 64, 77, 75, 89, 93, 32, 32, 36, 253, 34, 34, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 34, 34, 39, 255, 32, 32, 36, 253, 77, 75, 89, 93, 77, 75, 89, 103, 30, 30, 35, 255, 35, 35, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 39, 255, 30, 30, 35, 255, 77, 75, 89, 103, 77, 75, 89, 103, 30, 30, 35, 255, 35, 35, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 39, 255, 30, 30, 35, 255, 77, 75, 89, 103, 77, 75, 89, 93, 32, 32, 36, 253, 34, 34, 39, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 34, 34, 39, 255, 32, 32, 36, 253, 77, 75, 89, 93, 77, 75, 89, 64, 42, 41, 47, 240, 32, 32, 37, 255, 35, 35, 40, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 37, 37, 42, 255, 35, 35, 40, 255, 32, 32, 37, 255, 42, 41, 47, 240, 77, 75, 89, 64, 77, 75, 89, 26, 63, 62, 73, 150, 31, 31, 36, 252, 32, 32, 37, 255, 34, 34, 39, 255, 35, 35, 39, 255, 35, 35, 39, 255, 34, 34, 39, 255, 32, 32, 37, 255, 31, 31, 36, 252, 63, 62, 73, 150, 77, 75, 89, 26, 77, 75, 89, 4, 77, 75, 89, 40, 63, 62, 73, 149, 42, 41, 47, 240, 32, 32, 36, 253, 30, 30, 35, 255, 30, 30, 35, 255, 32, 32, 36, 253, 42, 41, 47, 240, 63, 62, 73, 149, 77, 75, 89, 40, 77, 75, 89, 4, 0, 0, 0, 0, 77, 75, 89, 4, 77, 75, 89, 25, 77, 75, 89, 64, 77, 75, 89, 93, 77, 75, 89, 102, 77, 75, 89, 102, 77, 75, 89, 93, 77, 75, 89, 64, 77, 75, 89, 25, 77, 75, 89, 4, 0, 0, 0, 0 ),
 "format": "RGBA8",
@@ -120,7 +128,7 @@ data = {
 [sub_resource type="ImageTexture" id=13]
 flags = 4
 flags = 4
-image = SubResource( 24 )
+image = SubResource( 50 )
 size = Vector2( 12, 12 )
 
 [sub_resource type="StyleBoxTexture" id=14]
@@ -151,6 +159,29 @@ HScrollBar/styles/scroll_focus = SubResource( 14 )
 [sub_resource type="DynamicFont" id=20]
 size = 24
 outline_color = Color( 0, 0, 0, 1 )
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=25]
+size = 20
+font_data = ExtResource( 15 )
+
+[sub_resource type="DynamicFont" id=35]
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=30]
+size = 20
+font_data = ExtResource( 16 )
+
+[sub_resource type="DynamicFont" id=40]
+size = 60
+font_data = ExtResource( 8 )
+
+[sub_resource type="DynamicFont" id=41]
+size = 24
+font_data = ExtResource( 19 )
+
+[sub_resource type="DynamicFont" id=46]
+size = 24
 font_data = ExtResource( 8 )
 
 [node name="Main" type="Node2D"]
@@ -205,22 +236,32 @@ value = 5.0
 custom_step = 1.0
 
 [node name="Color" type="Sprite" parent="ToolsBG"]
-position = Vector2( 0, -20 )
+position = Vector2( 0, -60 )
 scale = Vector2( 0.5, 0.5 )
 texture = ExtResource( 7 )
 
 [node name="ColorPickerButton" type="ColorPickerButton" parent="ToolsBG"]
 margin_left = -120.0
+margin_top = -40.0
 margin_right = 120.0
-margin_bottom = 36.0
+margin_bottom = -4.0
 align = 2
 color = Color( 0, 0.415686, 1, 1 )
 
 [node name="Button" type="Button" parent="ToolsBG"]
-margin_left = -121.0
-margin_top = 245.0
-margin_right = 5.0
-margin_bottom = 325.0
+margin_left = -120.0
+margin_top = 240.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( 292, -13 )
+text = "Reset Canvas"
+
+[node name="Button2" type="Button" parent="ToolsBG"]
+visible = false
+margin_top = 240.0
+margin_right = 120.0
+margin_bottom = 320.0
+rect_pivot_offset = Vector2( 292, -13 )
+text = "Save Canvas"
 
 [node name="fontsize" type="RichTextLabel" parent="ToolsBG"]
 margin_left = -30.0
@@ -234,7 +275,7 @@ bbcode_text = "[center]5"
 text = "5"
 
 [node name="Brush1" type="Sprite" parent="ToolsBG"]
-position = Vector2( -80, 120 )
+position = Vector2( -80, 80 )
 texture = ExtResource( 12 )
 
 [node name="brush1" type="Button" parent="ToolsBG/Brush1"]
@@ -245,7 +286,7 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Brush2" type="Sprite" parent="ToolsBG"]
-position = Vector2( 0, 120 )
+position = Vector2( 0, 80 )
 texture = ExtResource( 9 )
 
 [node name="brush2" type="Button" parent="ToolsBG/Brush2"]
@@ -256,7 +297,7 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Brush3" type="Sprite" parent="ToolsBG"]
-position = Vector2( 80, 120 )
+position = Vector2( 80, 80 )
 texture = ExtResource( 10 )
 
 [node name="brush3" type="Button" parent="ToolsBG/Brush3"]
@@ -267,11 +308,124 @@ margin_right = 40.0
 margin_bottom = 40.0
 
 [node name="Sel" type="Sprite" parent="ToolsBG"]
-position = Vector2( -80, 120 )
+position = Vector2( -80, 80 )
 texture = ExtResource( 11 )
+
+[node name="FileDialog" type="FileDialog" parent="."]
+margin_left = 360.0
+margin_top = 60.0
+margin_right = 1240.0
+margin_bottom = 680.0
+window_title = "파일로 저장"
+
+[node name="Title" type="Sprite" parent="."]
+position = Vector2( 800, 360 )
+texture = ExtResource( 14 )
+
+[node name="ChannelIDInput" type="TextEdit" parent="Title"]
+margin_left = -240.0
+margin_top = -60.0
+margin_right = 240.0
+margin_bottom = -20.0
+custom_fonts/font = SubResource( 25 )
+
+[node name="Button" type="Button" parent="Title"]
+margin_left = 250.0
+margin_top = -60.0
+margin_right = 330.0
+margin_bottom = -20.0
+text = "Connect"
+
+[node name="Loading" type="Sprite" parent="."]
+visible = false
+position = Vector2( 800, 360 )
+texture = ExtResource( 18 )
+
+[node name="Panel02" type="Sprite" parent="Loading"]
+position = Vector2( -640, 186 )
+texture = ExtResource( 17 )
+
+[node name="Answer" type="TextEdit" parent="Loading"]
+margin_left = -760.0
+margin_top = 170.0
+margin_right = -600.0
+margin_bottom = 230.0
+custom_colors/font_color = Color( 1, 1, 1, 1 )
+custom_fonts/font = SubResource( 35 )
+
+[node name="Setter" type="Button" parent="Loading"]
+margin_left = -590.0
+margin_top = 170.0
+margin_right = -520.0
+margin_bottom = 230.0
+text = "Set
+Answer"
+
+[node name="Label" type="Label" parent="Loading"]
+margin_left = -760.0
+margin_top = 140.0
+margin_right = -680.0
+margin_bottom = 170.0
+custom_colors/font_color = Color( 0, 0, 0, 1 )
+custom_fonts/font = SubResource( 30 )
+text = "정답 입력"
+
+[node name="Receiver" parent="." instance=ExtResource( 13 )]
+
+[node name="Closed" type="Sprite" parent="."]
+position = Vector2( 800, 1080 )
+texture = ExtResource( 20 )
+
+[node name="Answer" type="RichTextLabel" parent="Closed"]
+margin_left = -400.0
+margin_top = 100.0
+margin_right = 400.0
+margin_bottom = 200.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 40 )
+bbcode_enabled = true
+bbcode_text = "[center]정답 : ABC가나다"
+meta_underlined = false
+text = "정답 : ABC가나다"
+scroll_active = false
+
+[node name="member" type="RichTextLabel" parent="Closed"]
+margin_left = -400.0
+margin_top = 200.0
+margin_right = 400.0
+margin_bottom = 300.0
+custom_colors/default_color = Color( 1, 1, 1, 1 )
+custom_fonts/normal_font = SubResource( 41 )
+bbcode_enabled = true
+bbcode_text = "[center]맞힌 사람 : ABC가나다"
+meta_underlined = false
+text = "맞힌 사람 : ABC가나다"
+scroll_active = false
+
+[node name="ENDButton" type="Button" parent="Closed"]
+margin_left = 360.0
+margin_top = 260.0
+margin_right = 460.0
+margin_bottom = 340.0
+custom_fonts/font = SubResource( 46 )
+text = "END"
+
+[node name="NextButton" type="Button" parent="Closed"]
+margin_left = 240.0
+margin_top = 260.0
+margin_right = 340.0
+margin_bottom = 340.0
+custom_fonts/font = SubResource( 46 )
+text = "NEXT"
 
 [connection signal="value_changed" from="ToolsBG/HScrollBar" to="." method="_on_HScrollBar_value_changed"]
 [connection signal="button_up" from="ToolsBG/Button" to="." method="_on_Button_button_up"]
 [connection signal="button_up" from="ToolsBG/Brush1/brush1" to="." method="_on_brush1_button_up"]
 [connection signal="button_up" from="ToolsBG/Brush2/brush2" to="." method="_on_brush2_button_up"]
 [connection signal="button_up" from="ToolsBG/Brush3/brush3" to="." method="_on_brush3_button_up"]
+[connection signal="button_up" from="Title/Button" to="." method="_on_Button_button_up"]
+[connection signal="button_up" from="Loading/Setter" to="." method="_on_Setter_button_up"]
+[connection signal="chatReceived" from="Receiver" to="." method="_on_Receiver_chatReceived"]
+[connection signal="connected" from="Receiver" to="." method="_on_Receiver_connected"]
+[connection signal="button_up" from="Closed/ENDButton" to="." method="_on_ENDButton_button_up"]
+[connection signal="button_up" from="Closed/NextButton" to="." method="_on_NextButton_button_up"]
